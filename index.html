@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>One Piece Fan Survey</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">One Piece Fan Survey</h1>
+        <p id="description">Tell us what you like about One Piece!</p>
+        
+        <form id="survey-form">
+            <!-- Your details -->
+                <fieldset>
+                    <label id="name-label">Name
+                        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                    </label>
+
+                    <label id="email-label">Email
+                        <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+                    </label>
+
+                    <label id="number-label">Age (optional)
+                        <input id="number" name="age" type="number" min="5" max="120" placeholder="Age" />
+                    </label>
+                </fieldset>
+
+                <!-- How long have you been into One Piece -->
+                <fieldset>
+                    <legend>How long have you been into One Piece</legend>
+                    <label for="experience">
+                        <select id="experience" name="experience" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="new">Just started</option>
+                            <option value="1-2">1-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5plus">More than 5 years</option>
+                            <option value="not-yet">Not yet, just curious</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <!-- Anime or Manga -->
+                <fieldset>
+                    <legend>Which do you prefer?</legend>
+
+                    <label for="pref-anime">
+                        <input id="pref-anime" type="radio" name="preference" value="anime" checked />
+                        Anime
+                    </label>
+
+                    <label for="pref-manga">
+                        <input id="pref-manga" type="radio" name="preference" value="manga" />
+                        Manga
+                    </label>
+
+                    <label for="pref-both">
+                        <input id="pref-both" type="radio" name="preference" value="both" />                            Not Sure
+                        Both
+                    </label>
+                </fieldset>
+                
+                <!-- Favorite Straw Hat -->
+                <fieldset>
+                    <legend>Who is your favorite Straw Hat?</legend>
+                    <label for="favorite-strawhat">
+                        <select id="favorite-strawhat" name="favorite-strawhat" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="luffy">Luffy</option>
+                            <option value="zoro">Zoro</option>
+                            <option value="nami">Nami</option>
+                            <option value="Usopp">Usopp</option>
+                            <option value="sanji">Sanji</option>
+                            <option value="chopper">Chopper</option>
+                            <option value="robin">Robin</option>
+                            <option value="franky">Franky</option>
+                            <option value="brook">Brook</option>
+                            <option value="jinbe">Jinbe</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <!-- Arcs you like -->
+                <fieldset>
+                    <legend>Which arcs do you like? (Check all that apply)</legend>
+
+                    <label for="arc-eastblue">
+                        <input id="arc-eastblue" type="checkbox" name="arcs" value="arc-eastblue" class="inline" />
+                        East Blue
+                    </label>
+
+                    <label>
+                        <input id="arc-alabasta" type="checkbox" name="arcs" value="arc-alabasta" class="inline" />
+                        Alabasta
+                    </label>
+
+                    <label>
+                        <input id="arc-water7" type="checkbox" name="arcs" value="arc-water7" class="inline" />
+                        Water 7 / Enies Lobby
+                    </label>
+
+                    <label>
+                        <input id="arc-thriller" type="checkbox" name="arcs" value="arc-thriller" class="inline" />
+                        Thriller Bark
+                    </label>
+
+                    <label>
+                        <input id="arc-marineford" type="checkbox" name="arcs" value="arc-marineford" class="inline" />
+                        Marineford
+                    </label>
+
+                    <label>
+                        <input id="arc-dressrosa" type="checkbox" name="arcs" value="arc-dressrosa" class="inline" />
+                        Dressrosa
+                    </label>
+
+                    <label>
+                        <input id="arc-wano" type="checkbox" name="arcs" value="arc-wano" class="inline" />
+                        Wano
+                    </label>
+                </fieldset>
+
+                <!-- Comments -->
+                <fieldset>
+                    <legend>Any comments or favorite quotes?</legend>
+                    <label for="comments">
+                        <textarea id="comments" name="comments" rows="6" cols="60" placeholder="Write here..."></textarea>
+                    </label>
+                </fieldset>
+
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
